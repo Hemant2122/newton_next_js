@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 function Users(){
     const [data, setData] = useState([]);
+    console.log(data, "CSR DATA");
 
     useEffect(() => {
         async function fetchData() {
@@ -26,7 +27,7 @@ function Users(){
                         {name}
                     </div>
                 )
-            })}
+            })};
         </>
     )
 }
